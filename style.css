@@ -1,10 +1,131 @@
-.navbar{
-    background: #81179d;
+body{
+    font-family: 'Roboto', sans-serif;
 }
-.menubar{
-    height: 650px;
-    background: #81179d;
+
+/*navbar*/
+.menu-bar{
+    
+    background: linear-gradient(to right, #a517ba,#5f1782);
 }
-.navbar-brand img{
-    width: 50%;
+ul li{
+    padding: 10px;
+}
+ul li a{
+        position: relative;
+}
+ul li a::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    background:white;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: .5s;
+}
+ul li a:hover::before{
+    width: 100%;
+}
+/*Banner*/
+.banner{
+    
+    background: linear-gradient(to right, #a517ba,#5f1782);
+}
+.banner-content{
+    margin-top: 200px;
+}
+.banner-content h2{
+    font-size: 40px;
+    line-height: 48px;
+}
+.banner-content p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    
+}
+.tutorial img{
+    width: 10%;
+}
+.tutorial p{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.tutorial a{
+    display: block;
+}
+.wave img{
+    width: 100%;
+}
+.main-part{
+    height: 600px;
+}
+.right-banner{
+    margin-top: 50px;
+}
+/*Service section*/
+.service{
+    height: 500px;
+}
+.section-header::after{
+    content: "";
+    bottom: 0;
+    left: 30px;
+    height: 5px;
+    width: 70%;
+    display:inline-block;
+    background:linear-gradient(to right, #a517ba,#5f1782) ;
+    position: absolute;
+    transform: translateY(20px);
+    margin: auto;
+   
+}
+.section-header{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    
+    
+}
+.service-header{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.service img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+.card-text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.card{
+    border: none;
+}
+.card-group{
+    margin-bottom: 30px;
+}
+.service .button{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    
+}
+.service-button{
+    text-align: center;
+}
+/*testimonial*/
+.testimonial{
+    background:#f8f9fa ;
+}
+.t-header{
+   text-align: center;
+   
 }
